@@ -31,7 +31,7 @@ if (typeof window !== 'undefined') {
 
 // criar a autenticação com o google
 const auth = getAuth(app);
-const provider = new GoogleAuthProvider();
+const googleProvider = new GoogleAuthProvider();
 
 export async function signInWithGooglePopup() {
    try {
@@ -54,4 +54,4 @@ export async function logout() {
     }
 }
 
-export { auth, googleProvider, app, analytics };
+export { auth, GoogleAuthProvider, app, analytics };
